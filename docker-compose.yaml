@@ -1,10 +1,10 @@
 version: "3"
 services:
-  airflow:
+  flaskapp:
     build:
       context: ./
-      dockerfile: Dockerfile.airflow
-    image: airflowdocker
-    container_name: prediction-airflow
+      dockerfile: Dockerfile.streamlit
+    image: azuredeploy
+    container_name: prediction-streamlit
     ports:
-      - "8080:8080"
+      - "8501:8501"
